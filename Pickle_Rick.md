@@ -62,8 +62,9 @@ Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 ```
 
 ## Manual website enumeration
-\
+
 If we go to the index page of the website, we can see that Rick is talking about a password that he forgot.
+
 ![alt text](https://i.imgur.com/1xrSiU4.png) ==> image2.png 
 
 ![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG)
