@@ -1,11 +1,14 @@
 <p align="center">
-  THM : Pickle Rick<br>
-  Difficulty : Easy<br>
-  Room link : https://tryhackme.com/room/picklerick<br>
+  💻<B>THM : Pickle Rick</B><br>
+   <b>Difficulty : Easy</b><br>
+  <b>Room link : https://tryhackme.com/room/picklerick</b><br>
   <img src="https://i.imgur.com/3ypKR1f.png">
 </p>
 
-## Summary
+
+**This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.**
+
+## Summary 📃
 - [NMAP Scan](#nmap-scan)
 - [Manual Website Enumeration](#Manual-website-enumeration)
 - [Gobuster Scan](#Gobuster-scan)
