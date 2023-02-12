@@ -135,27 +135,27 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /robots.txt           (Status: 200) [Size: 17]
 ```
 
-And we found a login.php page ! (The portal.php page redirects us to login.php)  
+And we found a `login.php` page ! (The portal.php page redirects us to login.php)  
 So let's go to this page and try to login with the informations we gathered :
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
 
-Using **R1ckRul3s** as login and **Wubbalubbadubdub** as password, we are redirected to a portal.php page.  
+Using `R1ckRul3s` as login and `Wubbalubbadubdub` as password, we are redirected to a `portal.php` page.  
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/5.PNG#center)
 
 
-We cannot access any pages using the menu on top of the page. All tabs redirect us to **denied.php**  with the following message:"Only the REAL rick can view this page.." 
+We cannot access any pages using the menu on top of the page. All tabs redirect us to `denied.php`  with the following message:"Only the REAL rick can view this page.." 
 
-But on the Commands tab we have an input field that seems to be used to run commands. So let's try using **whoami**.
+But on the Commands tab we have an input field that seems to be used to run commands. So let's try using `whoami`.
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
 
-We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, sudo -l, and cat, but there is some filters that prevent from using some commands , like for cat.  
+We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, `sudo -l`, and `cat`, but there is some filters that prevent from using some commands , like for `cat`.  
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
-We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
+We can easily bypass those filters by just putting a '\\' inside the command, like so : `c\at file_name`.  
 
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG#center)
@@ -165,7 +165,7 @@ We can easily bypass those filters by just putting a '\\' inside the command, li
 Now we have multiple choices:  
 
 1. I could just find the different flags using this command input, using  `sudo -l`
-2. Get a reverse shell, this will be more easier for searching on the machine.
+2. Get a reverse shell. This will be more easier for searching on the machine.
 
 Like I said, we can use sudo -l   
 
@@ -173,9 +173,7 @@ Like I said, we can use sudo -l
 
 Yes... www-data can run any commands as root, without password.
 
-But I want to get a reverse shell on the website 
-
-
+Lets use the second method and get a reverse shell on the website 
 
 ## Getting a shell
 Let's see if pyhton3 is installed into the machine `which python3`
@@ -200,6 +198,7 @@ And then i did ```sudo su``` to get a shell as root.
 
 
 ## Find flags
+
 Now I can get the 3 ingredients for the potion that Rick needs :  
 
 1. What is the first ingredient Rick needs ? : **ls ==> cat Sup3rS3cretPickl3Ingred.txt**  
