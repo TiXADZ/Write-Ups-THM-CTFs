@@ -10,7 +10,7 @@
 - [Manual Website Enumeration](#Manual-website-enumeration)
 - [Gobuster Scan](#Gobuster-scan)
 - [Getting a shell](#Getting-a-shell)
-- [Find ingredients(flags)](#Finding-ingredients)
+- [Find ingredients (flags)](#Finding-ingredients)
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan
