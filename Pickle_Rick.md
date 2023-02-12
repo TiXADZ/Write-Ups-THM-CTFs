@@ -10,7 +10,7 @@
 - [Manual Website Enumeration](#Manual-website-enumeration)
 - [Gobuster Scan](#Gobuster-scan)
 - [Getting a shell](#Getting-a-shell)
-- [Find ingredients (flags)](#Finding-ingredients)
+- [Find ingredients (flags)](#Finding-ingredients(flags))
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan
@@ -197,7 +197,7 @@ stty -echo raw;fg
 And then i did ```sudo su``` to get a shell as root.
 
 
-## Find flags
+## Finding ingredients (flags)
 
 Now I can get the 3 ingredients for the potion that Rick needs :  
 
