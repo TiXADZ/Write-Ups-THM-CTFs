@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  💻<B><u>THM : Pickle Rick</u></B> 💻<br>
+  💻<B><u>THM : Pickle Rick (Free)</u></B> 💻<br>
    <b><u>Difficulty :</u> Easy ⭐</b><br>
   <b><u>Room link :</u> https://tryhackme.com/room/picklerick</b><br>
   <br>
@@ -236,5 +236,7 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 <u>**Follow me on:**</u> 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)      [![Tryhackme](https://i.imgur.com/gLYq8Bm.png)](https://tryhackme.com/p/TiXA)
+
+
 
 ---
