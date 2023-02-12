@@ -41,7 +41,7 @@ If we go to the index page of the website, we can see that Rick is talking about
 ![alt text](https://i.imgur.com/1xrSiU4.png)  
 
 Looking at the source code of the page, we can see that Rick left a comment containing a username.  
-![alt text](https://ibb.co/QPNCZ8S)  
+![alt text](https://i.ibb.co/GW2tXsY/1.png)  
 So now we have a username : **R1ckRul3s**
 
 One of the first things I look for when i'm enumerating a website is the robot.txt file. So let's see if there is a robot.txt file on this web server.  
