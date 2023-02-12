@@ -5,8 +5,9 @@
 
 <p align="center">
   💻<B>THM : Pickle Rick</B> 💻<br>
-   <b>Difficulty : Easy</b><br>
+   <b>Difficulty : Easy ⭐</b><br>
   <b>Room link : https://tryhackme.com/room/picklerick</b><br>
+  <br>
   <img src="https://i.imgur.com/3ypKR1f.png">
 </p>
 
