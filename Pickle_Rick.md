@@ -158,6 +158,9 @@ We see that we can run linux commands. So we can try to use some other commands.
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
+
+<div style="text-align:center"><img src="(https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG)" /></div>
+
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
 
