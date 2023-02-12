@@ -7,11 +7,11 @@
 
 ## Summary
 - [NMAP Scan](#nmap-scan)
-- [Manual Website Enumeration](#manual-website-enumeration)
-- [Dirb Scan](#dirb-scan)
-- [Getting a shell](#getting-a-shell)
-- [Find flags](#find-flags)
-- [Conclusion](#conclusion)
+- [Manual Website Enumeration](#Manual-website-enumeration)
+- [Dirb Scan](#Gobuster-scan)
+- [Getting a shell](#Getting-a-shell)
+- [Find flags](#Finding-ingredients)
+- [Conclusion](#Conclusion)
 
 ## NMAP Scan
 Let's make an nmap scan using the following cmd ==> ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
