@@ -159,7 +159,9 @@ We see that we can run linux commands. So we can try to use some other commands.
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG#center)
+<p align="center">
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG)
+</p>
 
 `mr. meeseek hair`
 
@@ -181,7 +183,9 @@ But I want to get a reverse shell on the website
 ## Getting a shell
 Let's see if pyhton3 is installed into the machine `which python3`
 
-![alt text](https://i.imgur.com/FKO4Icb.png)  ===> 10.png
+<p align="center">
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)
+</p>
 
 After starting a listener on my machine i used an one liner python3 shell on the command panel
 
