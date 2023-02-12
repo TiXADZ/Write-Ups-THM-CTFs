@@ -20,7 +20,7 @@ Finding ingredients :bookmark_tabs:
 - [Manual Website Enumeration](#nmap-scan-mag_right)
 - [Gobuster Scan](#gobuster-scan-mag_right)
 - [Getting a shell](#getting-a-shell-space_invader)
-- [Find ingredients :bookmark_tabs:](#Finding-ingredients)
+- [Find ingredients](#Finding-ingredients)
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan :mag_right:
