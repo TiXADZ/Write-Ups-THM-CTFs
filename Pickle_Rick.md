@@ -145,8 +145,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /robots.txt           (Status: 200) [Size: 17]
 ```
 
-And we found a `login.php` page ! (The portal.php page redirects us to login.php)  
-So let's go to this page and try to login with the informations we gathered :
+And we found a `login.php` page ! (The portal.php page redirects us to login.php) so let's go to this page and try to login with the informations we gathered :
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
 
