@@ -4,8 +4,9 @@
 </p>
 
 <p align="center">
-  💻<B><u>THM : Pickle Rick (Free)</u></B> 💻<br>
+  💻<B><u>THM : Pickle Rick</u></B> 💻<br>
    <b><u>Difficulty :</u> Easy ⭐</b><br>
+   <b><u>Category :</u> Free ✔️</b><br>
   <b><u>Room link :</u> https://tryhackme.com/room/picklerick</b><br>
   <br>
   <img src="https://i.imgur.com/3ypKR1f.png">
