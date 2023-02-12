@@ -233,8 +233,8 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3500&pause=500&center=true&vCenter=true&multiline=true&width=500&height=80&lines=Made+with+%F0%9F%92%96+If+you+like+this+project%2C+;give+it+a+%E2%AD%90+and+share+it+with+friends!" alt="Typing SVG" /></a>
 </p>
 
-**Follow me on:** 
+<u>**Follow me on:**</u> 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)      [![Tryhackme](https://i.imgur.com/gLYq8Bm.png)](https://tryhackme.com/p/TiXA)
 
 ---
