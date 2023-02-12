@@ -14,8 +14,11 @@
 - [Conclusion](#conclusion)
 
 ## NMAP Scan
+
+Do the following cmd : nmap -A -p- -oN nmapResults.txt 10.10.181.166
+
 ```
-# Nmap 7.92 scan initiated Fri Aug 19 23:14:31 2022 as: nmap -A -p- -oN nmapResults.txt 10.10.99.97
+# Nmap 7.92 scan initiated Fri Aug 19 23:14:31 2022 as: nmap -A -p- -oN nmapResults.txt 10.10.181.166
 Nmap scan report for 10.10.99.97
 Host is up (0.028s latency).
 Not shown: 65533 closed tcp ports (conn-refused)
