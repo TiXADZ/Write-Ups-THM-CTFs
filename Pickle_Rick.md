@@ -1,5 +1,5 @@
 <p align="center">
-  💻<B>THM : Pickle Rick</B><br>
+  💻<B>THM : Pickle Rick</B> 💻<br>
    <b>Difficulty : Easy</b><br>
   <b>Room link : https://tryhackme.com/room/picklerick</b><br>
   <img src="https://i.imgur.com/3ypKR1f.png">
@@ -16,7 +16,7 @@
 - [Find ingredients (flags)](#Finding-ingredients)
 - [Conclusion](#Conclusion)
 
-## NMAP Scan
+## NMAP Scan :mag_right:
 Let's make an nmap scan using the following cmd ==> ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
 
 ```
@@ -64,7 +64,7 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 ```
 
-## Manual website enumeration
+## Manual website enumeration :eyes:
 
 If we go to the index page of the website, we can see that Rick is talking about a password that he forgot.
 
@@ -84,7 +84,7 @@ And we found a strange looking strings... It's not a page of the webserver so.. 
 ```Robots.txt: **Wubbalubbadubdub**```
 
 
-## Gobuster Scan
+## Gobuster Scan :mag_right:
 Lets use gobuster to list the directories of the site
 
 ```gobuster dir -u http://10.10.181.166/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobusterResults.txt -x .php,.html,.txt,.pdf```
@@ -178,7 +178,7 @@ Yes... www-data can run any commands as root, without password.
 
 Lets use the second method and get a reverse shell on the website 
 
-## Getting a shell
+## Getting a shell :space_invader:
 Let's see if pyhton3 is installed into the machine `which python3`
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/10.PNG#center)
@@ -200,7 +200,7 @@ stty -echo raw;fg
 And then i did ```sudo su``` to get a shell as root.
 
 
-## Finding ingredients
+## Finding ingredients :bookmark_tabs: 
 
 Now I can get the 3 ingredients for the potion that Rick needs :  
 
@@ -211,7 +211,7 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 3. Whats the final ingredient Rick needs ? : **cd /root ==> ls ==> cat 3rd.txt**  
 
 
-## Conclusion
+## Conclusion 
 
 - In this CTF, we see that it can be useful to read the source code of pages on a web server, we can find useful informations, even if there is no credentials we can find CMS versions, links to other pages...  
 
@@ -220,3 +220,11 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 - I also learned that it is very easy for an attacker to get a full control of the machine if the user ```www-data``` has too much permissions, i was able to do ```sudo -l``` to check that i have all permissions to do ```sudo su``` without password. So it is very important to manage permissions properly.
 
 - ```www-data``` should not have the right to run any command as root.
+
+---
+
+**Made with :sparkling_heart: If you like this project, give it a ⭐ and share it with friends!**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)
+
+
