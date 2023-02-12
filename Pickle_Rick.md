@@ -65,17 +65,17 @@ Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 
 If we go to the index page of the website, we can see that Rick is talking about a password that he forgot.
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG)
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG#center)
 
 Looking at the source code of the page, we can see that Rick left a comment containing a username.  
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG)
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG#center)
 
 So now we have a username : **R1ckRul3s**
 
 One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG)
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
 
 And we found a strange looking strings... It's not a page of the webserver so.. Maybe the password that Rick lost ? Let's write it down for the moment. 
 ```Robots.txt: **Wubbalubbadubdub**```
@@ -137,26 +137,29 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 
 And we found a login.php page ! (The portal.php page redirects us to login.php)  
 So let's go to this page and try to login with the informations we gathered :
-![alt text](https://i.imgur.com/reIQn7I.png)  ===> 4.png
+
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
+
 
 Using **R1ckRul3s** as login and **Wubbalubbadubdub** as password, we are redirected to a portal.php page.  
-![alt text](https://i.imgur.com/B3hfAUr.png)  ===> 5.png
+
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/5.PNG#center)
 
 
 We cannot access any pages using the menu on top of the page. All tabs redirect us to **denied.php**  with the following message:"Only the REAL rick can view this page.." 
 
 But on the Commands tab we have an input field that seems to be used to run commands. So let's try using **whoami**.
 
-![alt text](https://i.imgur.com/2u9jgra.png)  ===>6.png
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
 
 We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, sudo -l, and cat, but there is some filters that prevent from using some commands , like for cat.  
 
-![alt text](https://i.imgur.com/2u9jgra.png)  ===>7.png
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
 
-![alt text](https://i.imgur.com/2u9jgra.png)  ===>8.png
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG#center)
 
 `mr. meeseek hair`
 
@@ -165,8 +168,9 @@ Now we have multiple choices:
 1. I could just find the different flags using this command input, using  `sudo -l`
 2. Get a reverse shell, this will be more easier for searching on the machine.
 
-Like I said, we can use sudo -l   
-![alt text](https://i.imgur.com/FKO4Icb.png)  ===> 9.png
+Like I said, we can use `sudo -l`  
+
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG#center)
 
 Yes... www-data can run any commands as root, without password.
 
