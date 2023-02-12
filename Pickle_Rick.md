@@ -150,11 +150,9 @@ We cannot access any pages using the menu on top of the page. All tabs redirect 
 
 But on the Commands tab we have an input field that seems to be used to run commands. So let's try using **whoami**.
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
 
 We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, sudo -l, and cat, but there is some filters that prevent from using some commands , like for cat.  
-
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
@@ -164,9 +162,7 @@ We see that we can run linux commands. So we can try to use some other commands.
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
 
-<p align="center">
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG)
-</p>
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG#center)
 
 `mr. meeseek hair`
 
@@ -177,7 +173,7 @@ Now we have multiple choices:
 
 Like I said, we can use `sudo -l`  
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG#center)
 
 Yes... www-data can run any commands as root, without password.
 
@@ -188,14 +184,7 @@ But I want to get a reverse shell on the website
 ## Getting a shell
 Let's see if pyhton3 is installed into the machine `which python3`
 
-<p align="center">
-![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)
-</p>
-
-test
-
-![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)#center)
-
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/10.PNG#center)
 
 After starting a listener on my machine i used an one liner python3 shell on the command panel
 
