@@ -216,4 +216,4 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 
 - I also learned that it is very easy for an attacker to get a full control of the machine if the user ```www-data``` has too much permissions, i was able to do ```sudo -l``` to check that i have all permissions to do ```sudo su``` without password. So it is very important to manage permissions properly.
 
- ```www-data``` should not have the right to run any command as root.
+- ```www-data``` should not have the right to run any command as root.
