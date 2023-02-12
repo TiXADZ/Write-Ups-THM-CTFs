@@ -184,8 +184,13 @@ But I want to get a reverse shell on the website
 Let's see if pyhton3 is installed into the machine `which python3`
 
 <p align="center">
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)
 </p>
+
+test
+
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG)#center)
+
 
 After starting a listener on my machine i used an one liner python3 shell on the command panel
 
