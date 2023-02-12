@@ -1,4 +1,7 @@
 <p align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3000&pause=500&center=true&vCenter=true&width=500&lines=Hello+i'm+TiXA%2C+Welcome+to+my+Repo;Give+it+a+%E2%AD%90+and+share+it+with+friends!)](https://git.io/typing-svg)
+
   💻<B>THM : Pickle Rick</B> 💻<br>
    <b>Difficulty : Easy</b><br>
   <b>Room link : https://tryhackme.com/room/picklerick</b><br>
@@ -226,5 +229,3 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 **Made with :sparkling_heart: If you like this project, give it a ⭐ and share it with friends!**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)
-
-
