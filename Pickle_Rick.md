@@ -65,16 +65,18 @@ Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 
 If we go to the index page of the website, we can see that Rick is talking about a password that he forgot.
 
-![alt text](https://i.imgur.com/1xrSiU4.png) ==> image2.png 
-
 ![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG)
 
 Looking at the source code of the page, we can see that Rick left a comment containing a username.  
-![alt text](https://i.imgur.com/1YaCAlY.png)  
+
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG)
+
 So now we have a username : **R1ckRul3s**
 
-One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.  
-![alt text](https://i.imgur.com/cqP0pux.png)  ==> iamge3.png
+One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.
+
+![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG)
+
 And we found a strange looking strings... It's not a page of the webserver so.. Maybe the password that Rick lost ? Let's write it down for the moment. 
 ```Robots.txt: **Wubbalubbadubdub**```
 
