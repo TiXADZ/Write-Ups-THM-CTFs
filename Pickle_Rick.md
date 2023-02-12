@@ -23,7 +23,7 @@
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan :mag_right:
-Let's make an nmap scan using the following cmd ==> ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
+Let's make an nmap scan using the following cmd ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
 
 ```
 sudo nmap -sV -A 10.10.181.166 -oN nmapResultsB.txt 
@@ -80,14 +80,15 @@ Looking at the source code of the page, we can see that Rick left a comment cont
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/1.PNG#center)
 
-So now we have a username : **R1ckRul3s**
+So now we have a username : `R1ckRul3s`
 
-One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.  
+One of the first things I look for when i'm enumerating a website is the `robots.txt` file. So let's see if there is a robots file on this web server.  
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG#center)
 
-And we found a strange looking strings... It's not a page of the webserver so.. Maybe the password that Rick lost ? Let's write it down for the moment. 
-```Robots.txt: **Wubbalubbadubdub**```
+And we found a strange looking strings... It's not a page of the webserver so.. Maybe the password that Rick lost ? Let's write it down for the moment.
+
+`Robots.txt: Wubbalubbadubdub`
 
 
 ## Gobuster Scan :mag_right:
@@ -112,7 +113,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 /assets               (Status: 301) [Size: 315] [--> http://10.10.181.166/assets/]
 ```
 
-First I tried a simple gobuster scan but it didn't found any interesting pages, so I decided to try with the -X parameter to search for page with extensions: php,html,txt,pdf
+First I tried a simple gobuster scan but it didn't found any interesting pages, so I decided to try with the `-X` parameter to search for page with extensions: `php,html,txt,pdf`
 
 ```gobuster dir -u http://10.10.181.166/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobusterResults.txt -x .php,.html,.txt,.pdf```
 
@@ -154,9 +155,9 @@ Using `R1ckRul3s` as login and `Wubbalubbadubdub` as password, we are redirected
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/5.PNG#center)
 
 
-We cannot access any pages using the menu on top of the page. All tabs redirect us to `denied.php`  with the following message:"Only the REAL rick can view this page.." 
+We cannot access any pages using the menu on top of the page. All tabs redirect us to `denied.php` with the following message: *Only the REAL rick can view this page..*
 
-But on the Commands tab we have an input field that seems to be used to run commands. So let's try using `whoami`.
+But on the Commands tab we have an input field that seems to be used to run commands. So let's try using `whoami`
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
 
@@ -169,7 +170,7 @@ We can easily bypass those filters by just putting a '\\' inside the command, li
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/8.PNG#center)
 
-`mr. meeseek hair`
+`c\at Sup3rS3cretPickl3lngred.txt: mr. meeseek hair`
 
 Now we have multiple choices:  
 
@@ -203,18 +204,18 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 CTRL + Z
 stty -echo raw;fg
 ```
-And then i did ```sudo su``` to get a shell as root.
+And then i did `sudo su` to get a shell as root.
 
 
 ## Finding ingredients :bookmark_tabs: 
 
 Now I can get the 3 ingredients for the potion that Rick needs :  
 
-1. What is the first ingredient Rick needs ? : **ls ==> cat Sup3rS3cretPickl3Ingred.txt**  
+1. What is the first ingredient Rick needs ? : `ls ==> cat Sup3rS3cretPickl3Ingred.txt`  
 
-2. Whats the second ingredient Rick needs ? : **cd /home/rick/ ==> ls ==> cat second\ ingredients**
+2. Whats the second ingredient Rick needs ? : `cd /home/rick/ ==> ls ==> cat second\ ingredients`
 
-3. Whats the final ingredient Rick needs ? : **cd /root ==> ls ==> cat 3rd.txt**  
+3. Whats the final ingredient Rick needs ? : `cd /root ==> ls ==> cat 3rd.txt`  
 
 
 ## Conclusion 
