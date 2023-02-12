@@ -156,6 +156,8 @@ We see that we can run linux commands. So we can try to use some other commands.
 
 ![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
+
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
 
