@@ -69,6 +69,7 @@ HOP RTT      ADDRESS
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 ```
+We notice the availability of a web server, let's visit the website to find out more informations.
 
 ## Manual website enumeration :eyes:
 
@@ -219,13 +220,13 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 
 ## Conclusion 
 
-- In this CTF, we see that it can be useful to read the source code of pages on a web server, we can find useful informations, even if there is no credentials we can find CMS versions, links to other pages...  
+- In this CTF, we see that it can be useful to read the source code of pages on a web server, we can find useful informations, even if there is no credentials we can find CMS versions, links to other pages.  
 
-- Even if there is filters on command input, there is sometimes a way to bypass it, as was the case with ```cat ==> c\at```
+- Even if there is filters on command input, there is sometimes a way to bypass it, as was the case with `cat ==> c\at`
 
-- I also learned that it is very easy for an attacker to get a full control of the machine if the user ```www-data``` has too much permissions, i was able to do ```sudo -l``` to check that i have all permissions to do ```sudo su``` without password. So it is very important to manage permissions properly.
+- We also noticed that it is very easy for an attacker to get a full control of the machine if the user `www-data` has too much permissions more than necessary, i was able to do `sudo -l` to check that i have all permissions to do `sudo su` without password. So it is very important to manage permissions properly.
 
-- ```www-data``` should not have the right to run any command as root.
+- `www-data` should not :x: have the right to run any command as root.
 
 ---
 
@@ -236,7 +237,6 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 <u>**Follow me on:**</u> 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazim-hamaoui/)      [![Tryhackme](https://i.imgur.com/gLYq8Bm.png)](https://tryhackme.com/p/TiXA)
-
 
 
 ---
