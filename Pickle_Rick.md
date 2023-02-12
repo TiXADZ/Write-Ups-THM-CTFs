@@ -8,9 +8,9 @@
 ## Summary
 - [NMAP Scan](#nmap-scan)
 - [Manual Website Enumeration](#Manual-website-enumeration)
-- [Dirb Scan](#Gobuster-scan)
+- [Gobuster Scan](#Gobuster-scan)
 - [Getting a shell](#Getting-a-shell)
-- [Find flags](#Finding-ingredients)
+- [Find ingredients(flags)](#Finding-ingredients)
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan
