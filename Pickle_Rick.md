@@ -12,15 +12,15 @@
   <img src="https://i.imgur.com/3ypKR1f.png">
 </p>
 
-
+Finding ingredients :bookmark_tabs:
 **This Rick and Morty themed challenge requires you to exploit a webserver to find 3 ingredients that will help Rick make his potion to transform himself back into a human from a pickle.**
 
 ## Summary 📃
 - [NMAP Scan](#nmap-scan)
-- [Manual Website Enumeration](#Manual-website-enumeration)
-- [Gobuster Scan](#Gobuster-scan)
-- [Getting a shell](#Getting-a-shell)
-- [Find ingredients (flags)](#Finding-ingredients)
+- [Manual Website Enumeration](#nmap-scan-mag_right)
+- [Gobuster Scan](#gobuster-scan-mag_right)
+- [Getting a shell](#getting-a-shell-space_invader)
+- [Find ingredients :bookmark_tabs:](#Finding-ingredients)
 - [Conclusion](#Conclusion)
 
 ## NMAP Scan :mag_right:
