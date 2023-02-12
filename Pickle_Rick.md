@@ -160,7 +160,7 @@ But on the Commands tab we have an input field that seems to be used to run comm
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/6.PNG#center)
 
-We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run ls, wget, `sudo -l`, and `cat`, but there is some filters that prevent from using some commands , like for `cat`.  
+We see that we can run linux commands. So we can try to use some other commands... I tried some useful commands and , we can run `ls`, `wget`, `sudo -l`, and `cat`, but there is some filters that prevent from using some commands , like for `cat`.  
 
 ![img](https://github.com/TiXADZ/Write-Ups-THM-CTFs/blob/main/images/Pickle_Rick/7.PNG#center)
 
