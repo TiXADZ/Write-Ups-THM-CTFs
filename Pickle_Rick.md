@@ -85,7 +85,7 @@ And we found a strange looking strings... It's not a page of the webserver so.. 
 ## Gobuster Scan :mag_right:
 Lets use gobuster to list the directories of the site
 
-```gobuster dir -u http://10.10.181.166/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobusterResults.txt -x .php,.html,.txt,.pdf```
+```gobuster dir -u http://10.10.181.166/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobusterResults.txt```
 
 ```
 Gobuster v3.4
