@@ -221,8 +221,10 @@ Now I can get the 3 ingredients for the potion that Rick needs :
 ---
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3500&pause=500&center=true&vCenter=true&multiline=true&width=500&height=80&lines=Made+with+%F0%9F%92%96+If+you+like+this+project%2C+;give+it+a+%E2%AD%90+and+share+it+with+friends!" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3500&pause=2600&center=true&vCenter=true&multiline=true&width=550&height=80&lines=✨+Made+with+%F0%9F%92%96+If+you+like+this+project%2C+;give+it+a+%E2%AD%90+and+share+it+with+friends!+✨" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=21&duration=3500&pause=2000&center=true&vCenter=true&multiline=true&width=500&height=80&lines=✨+Thanks+for+reading+my+write+ups+✨" alt="Typing SVG" /></a>
 </p>
+
 
 <u>**My networks :**</u> 
 
