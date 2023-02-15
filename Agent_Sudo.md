@@ -17,22 +17,21 @@
 
 ## Summary 📃
 - [NMAP Scan](#nmap-scan-mag_right)
-- [Website Enumeration](#website-enumeration-eyes)
-  - [Gobuster Enumeration](#website-enumeration-eyes)
-  - [Manual Enumeration](#website-enumeration-eyes)
+- [Website Enumeration](#website-enumeration-computer)
+  - [Gobuster Enumeration](#gobuster-enumeration-mag_right)
+  - [Manual Enumeration](#manual-enumeration-mag_right)
   - [Questions / Answers : Enumerate](#website-enumeration-eyes)
-- [FTP Bruteforce](#gobuster-scan-mag_right)
-- [Steganography](#getting-a-shell-space_invader)
+- [FTP Bruteforce](#ftp-bruteforce-bomb)
+- [Steganography](#steganography-microscope)
   - [Online / Offline Tools](#website-enumeration-eyes)
   - [Questions / Answers : Hash cracking and brute-force](#website-enumeration-eyes)
-- [Finding Flags](#website-enumeration-eyes)
-  - [SSH Connection](#website-enumeration-eyes)
-  - [Image Search](#finding-ingredients-bookmark_tabs)
+- [SSH Connection](#ssh-connection)
+  - [Image Search](#image-search)
   - [Questions / Answers : Capture the user flag](#website-enumeration-eyes)
-- [Privilege Escalation](#finding-ingredients-bookmark_tabs)
-  - [Getting the root privilege](#website-enumeration-eyes)
+- [Privilege Escalation](#privilege-escalation-chart_with_upwards_trend)
+  - [Getting the root privilege](#getting-the-root-privilege)
   - [Questions / Answers : Privilege escalation](#website-enumeration-eyes)
-- [Conclusion](#Conclusion)
+- [Conclusion](#conclusion)
 
 ## NMAP Scan :mag_right:
 
@@ -539,7 +538,7 @@ Answer : hackerrules!
 
 </details>
 
-### SSH Connection
+## SSH Connection
 
 Now let's connect to SSH as `james` using `hackerrules!` as password :  
 ```
