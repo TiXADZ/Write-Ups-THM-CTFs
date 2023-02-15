@@ -144,9 +144,8 @@ I tried with `A,B,` and when trying with `C` we got the following :
 
 ![img](https://raw.githubusercontent.com/TiXADZ/Write-Ups-THM-CTFs/main/images/Agent_Sudo/9.PNG#center)
 
-Now, we have a username **`chris`** let's keep it for later and we also know from the message that he has weak credentials, so we can try to bruteforce other services accessible on the target machine with this username.
+Now, we have a username **`chris`** let's keep it for later and we also know from the message that he has weak credentials, so we can try to bruteforce other services accessible on the target machine with this username[.](#qi-enumerate)
 
-[](#qi-enumerate)
 <details>
   <summary><b>Questions / Answers : Enumerate</b></summary>
 
