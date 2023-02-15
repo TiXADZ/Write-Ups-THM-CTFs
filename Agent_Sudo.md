@@ -20,7 +20,7 @@
 - [Website Enumeration](#website-enumeration-computer)
   - [Gobuster Enumeration](#gobuster-enumeration-mag_right)
   - [Manual Enumeration](#manual-enumeration-mag_right)
-  - [Questions / Answers : Enumerate](#QI-enumerate)
+  - [Questions / Answers : Enumerate](#qi-enumerate)
 - [FTP Bruteforce](#ftp-bruteforce-bomb)
 - [Steganography](#steganography-microscope)
   - [Online / Offline Tools](#website-enumeration-eyes)
@@ -146,7 +146,7 @@ I tried with `A,B,` and when trying with `C` we got the following :
 
 Now, we have a username **`chris`** let's keep it for later and we also know from the message that he has weak credentials, so we can try to bruteforce other services accessible on the target machine with this username.
 
-[](#QI-enumerate)
+[](#qi-enumerate)
 <details>
   <summary><b>Questions / Answers : Enumerate</b></summary>
 
